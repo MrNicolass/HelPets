@@ -21,9 +21,16 @@
 
 ## 2. Levantamento de Requisitos (Histórias de Usuário)
 
-- Como **[tipo de usuário]**, quero **[funcionalidade]** para **[benefício esperado]**.
-- Como **[tipo de usuário]**, quero **[funcionalidade]** para **[benefício esperado]**.
-- *(Adicione quantas histórias forem necessárias)*
+- Como ONG, quero cadastrar minha instituição com nome, CNPJ, endereço, telefone e responsável para ter acesso ao sistema e gerenciar os animais resgatados.
+- Como ONG, quero cadastrar animais resgatados informando nome, espécie, raça, idade estimada, gênero, estado de saúde, data e local do resgate para organizar os animais sob minha responsabilidade.
+- Como ONG, quero atualizar o status dos animais para “Resgatado”, “Disponível para adoção”, “Adotado” ou “Falecido” para manter um controle sobre a situação de cada animal.
+- Como ONG, quero vincular um tutor a um animal no momento da adoção para manter um histórico e facilitar o acompanhamento pós-adoção.
+- Como ONG, quero buscar e filtrar animais resgatados por espécie, raça, gênero, local do resgate e status para facilitar a localização e gestão dos animais.
+- Como ONG, quero exportar dados de resgates e adoções em formatos como CSV ou PDF para gerar relatórios e compartilhar informações quando necessário.
+- Como ONG, quero registrar e visualizar os locais onde os animais foram resgatados para identificar áreas de maior incidência de abandono.
+- Como ONG, quero editar e excluir registros de animais, tutores e resgates para corrigir erros e manter os dados atualizados.
+- Como administrador do sistema, quero gerenciar ONGs cadastradas, podendo ativá-las ou desativá-las para garantir que apenas instituições autorizadas utilizem o sistema.
+- Como usuário do sistema, quero recuperar minha senha via e-mail para restaurar meu acesso caso eu a perca.
 
 ---
 
