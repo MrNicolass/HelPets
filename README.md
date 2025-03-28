@@ -36,12 +36,29 @@
 
 ## 3. Priorização dos Requisitos (MoSCoW)
 
-| Requisito                                   | Prioridade |
-|---------------------------------------------|------------|
-| [Descrição da funcionalidade]               | Must       |
-| [Descrição da funcionalidade]               | Should     |
-| [Descrição da funcionalidade]               | Could      |
-| [Descrição da funcionalidade]               | Won’t      |
+| Requisito                                                                 | Prioridade |
+|---------------------------------------------------------------------------|------------|
+| Cadastro de ONGs com nome, CNPJ, endereço, telefone e responsável         | Must       |
+| Cadastro de animais resgatados com informações detalhadas                 | Must       |
+| Atualização do status dos animais (Resgatado, Disponível, Adotado, etc.)  | Must       |
+| Vinculação de tutor a um animal no momento da adoção                      | Must       |
+| Busca e filtragem de animais por critérios específicos                    | Must       |
+| Gerenciamento de ONGs pelo administrador (ativação/desativação)           | Must       |
+| Exportação de dados de resgates e adoções em CSV ou PDF                   | Should     |
+| Recuperação de senha via e-mail                                           | Must       |
+| Registro e visualização dos locais de resgate                             | Should     |
+| Edição e exclusão de registros de animais, tutores e resgates             | Must       |
+| Relatórios e estatísticas sobre resgates, adoções e locais de abandono    | Should     |
+| Interface responsiva para dispositivos móveis e desktops                  | Must       |
+| Uso de banco de dados relacional                                          | Must       |
+| Implementação de segurança (criptografia de senhas, por exemplo)          | Must       |
+| Tempo de resposta otimizado para operações CRUD                           | Should     |
+| Boas práticas de acessibilidade na interface                              | Could      |
+| Escalabilidade para gerenciar grande volume de dados                      | Should     |
+| Interface intuitiva com ícones e cores amigáveis                          | Could      |
+| Compatibilidade com os navegadores mais utilizados                        | Should     |
+| Backups periódicos dos dados                                              | Could      |
+
 
 ---
 
