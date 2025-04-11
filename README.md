@@ -75,7 +75,7 @@
 
 ## 5. Organização das Entregas por Sprint
 
-As Sprints do projeto estão disponíveis no [Trello](https://trello.com/w/helpets8/home)
+As Sprints do projeto estão disponíveis no [Trello](https://trello.com/w/helpets8/home).
 
 ### Sprint 1
 - [Funcionalidade 1]
