@@ -10,7 +10,7 @@ const menuItems = [
   { label: "Text", icon: <FaCog /> },
 ];
 
-export default function Navbar() {
+export default function Sidebar() {
   return (
     <aside className="bg-[#F5F7FA] w-64 min-h-screen flex flex-col justify-between border-r border-gray-200">
       <div>
