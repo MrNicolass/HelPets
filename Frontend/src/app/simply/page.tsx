@@ -1,9 +1,9 @@
 import PageTitle from "@/components/PageTitle";
 
-export default function Home() {
+export default function SimplyPage() {
   return (
     <div>
-      <PageTitle title="Help"/>
+      <PageTitle title="Boné page"/>
     </div>
   );
 }
