@@ -1,0 +1,9 @@
+@import "../globals.css";
+
+.button-color {
+    background: var(--c-blue);
+}
+
+.link-color {
+    color: var(--c-blue);
+}
