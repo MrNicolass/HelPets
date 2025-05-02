@@ -38,8 +38,8 @@ export default function Sidebar() {
           <img src="/images/Captura de tela 2025-05-02 154153.png" alt="User" className="w-full h-full object-cover" />
         </div>
         <div className="flex flex-col flex-1 items-start ml-3">
-          <span className="font-semibold text-gray-700 leading-tight">Nome</span>
-          <span className="text-xs text-gray-400 leading-tight">Jabatan</span>
+          <span className="font-semibold text-gray-700 leading-tight">Lorem</span>
+          <span className="text-xs text-gray-400 leading-tight">Ipsum</span>
         </div>
         <button className="text-gray-400 hover:text-red-500 transition-colors text-xl ml-2">
           <FaSignOutAlt />
