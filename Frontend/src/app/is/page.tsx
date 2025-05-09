@@ -1,9 +1,9 @@
 import PageTitle from "@/components/PageTitle";
 
-export default function Home() {
+export default function IsPage() {
   return (
     <div>
-      <PageTitle title="Help"/>
+      <PageTitle title="Is Page"/>
     </div>
   );
 }
