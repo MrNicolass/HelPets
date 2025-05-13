@@ -16,10 +16,6 @@ export default function PageTitle({ title }: TitleProps) {
         <h1 className="text-4xl font-extrabold text-gray-800 dark:text-gray-100">
           {title}
         </h1>
-
-        <h3 className="mt-8 text-md text-gray-600 dark:text-gray-300">
-          Olá, <span className="font-semibold">[username]</span>!
-        </h3>
       </header>
     </div>
   );
