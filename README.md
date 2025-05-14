@@ -7,7 +7,7 @@
 ## Situação do Projeto
 ![Status](https://img.shields.io/badge/Status-Em%20Progresso-yellow)
 
-![Etapa](https://img.shields.io/badge/Etapa-N1-green)![Etapa](https://img.shields.io/badge/N2-000000)![Etapa](https://img.shields.io/badge/N3-000000)
+![Etapa](https://img.shields.io/badge/Etapa-N1-000000)![Etapa](https://img.shields.io/badge/N2-green)![Etapa](https://img.shields.io/badge/N3-000000)
 
 # HelPets
 
