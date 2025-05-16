@@ -3,7 +3,7 @@
 import PageTitle from "@/components/PageTitle";
 import PieChartPage from "../piechart/page";
 
-export default function LoremPage() {
+export default function DashboardPage() {
   return (
     <div>
       <PageTitle title="Home" />
