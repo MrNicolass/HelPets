@@ -6,8 +6,12 @@ import "leaflet/dist/leaflet.css";
 import { useEffect } from "react";
 
 export default function GeoHeatMap() {
+  let map: any = "";
   useEffect(() => {
-    const map = L.map("map").setView([-26.3044, -48.8487], 13); // Joinville
+    if(!map) {
+    map = L.map("map").setView([-26.3044, -48.8487], 13); // Joinville
+    }
+    // const map = L.map("map").setView([-26.3044, -48.8487], 13); // Joinville
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: "© OpenStreetMap",
