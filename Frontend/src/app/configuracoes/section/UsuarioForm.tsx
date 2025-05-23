@@ -2,28 +2,20 @@
 
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { z } from 'zod';
 import { useState } from 'react';
 import { UserCircleIcon } from '@heroicons/react/24/solid';
 import { useSaveConfig } from '../hooks/useSaveConfig';
-
-const schema = z.object({
-  nomeCompleto: z.string().min(2, 'Nome muito curto'),
-  email: z.string().email('Email inválido'),
-  senha: z.string().min(8, 'Mínimo 8 caracteres').optional(),
-});
-
-type FormData = z.infer<typeof schema>;
+import { UsuarioFormData, usuarioSchema } from '../../types/usuario';
 
 export default function UsuarioForm() {
-  const { register, handleSubmit, formState } = useForm<FormData>({
-    resolver: zodResolver(schema),
+  const { register, handleSubmit, formState } = useForm<UsuarioFormData>({
+    resolver: zodResolver(usuarioSchema),
   });
 
-  const { save, loading } = useSaveConfig('user');
+  const { save, loading } = useSaveConfig<UsuarioFormData>('user');
   const [avatarPreview, setAvatarPreview] = useState<string | null>(null);
 
-  function onSubmit(data: FormData) {
+  function onSubmit(data: UsuarioFormData) {
     save(data);
   }
 

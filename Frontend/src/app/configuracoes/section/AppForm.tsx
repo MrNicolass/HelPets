@@ -2,13 +2,7 @@
 
 import { useForm } from 'react-hook-form';
 import { useSaveConfig } from '../hooks/useSaveConfig';
-
-type AppSettings = {
-  tema: 'light' | 'dark' | 'system';
-  lingua: string;
-  padraoFilial: string;
-  emailNotification: boolean;
-};
+import { AppSettings } from '../../types/app-settings';
 
 function AppForm() {
   const { control, register, handleSubmit } = useForm<AppSettings>({
@@ -20,7 +14,7 @@ function AppForm() {
      },
   });
 
-  const { save, loading } = useSaveConfig('app');
+  const { save, loading } = useSaveConfig<AppSettings>('app');
 
   const onSubmit = (data: AppSettings) =>  save(data);
 
