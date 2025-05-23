@@ -9,23 +9,31 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.4",
+    "@heroicons/react": "^2.2.0",
+    "@hookform/resolvers": "^5.0.1",
     "autoprefixer": "^10.4.21",
     "framer-motion": "^12.11.0",
     "lucide-react": "^0.511.0",
+    "leaflet": "^1.9.4",
+    "leaflet.heat": "^0.2.0",
     "next": "15.3.1",
     "postcss": "^8.5.3",
     "react": "^19.0.0",
     "react-apexcharts": "^1.7.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
-    "react-router-dom": "^7.5.2"
+    "react-leaflet": "^5.0.0",
+    "react-router-dom": "^7.5.2",
+    "zod": "^3.25.23"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
+    "@types/leaflet": "^1.9.18",
+    "@types/node": "20.17.50",
+    "@types/react": "19.1.4",
     "@types/react-dom": "^19",
     "tailwindcss": "^4.1.5",
-    "typescript": "^5"
+    "typescript": "5.8.3"
   }
 }
