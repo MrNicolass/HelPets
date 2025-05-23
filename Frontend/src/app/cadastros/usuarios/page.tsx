@@ -7,14 +7,33 @@ import { ArrowLeft } from "lucide-react";
 
 export default function UsuariosPage() {
     const [nome, setNome] = useState("");
+    const [cpf, setCpf] = useState("");
     const [email, setEmail] = useState("");
     const [mensagem, setMensagem] = useState("");
+    const [tipoMensagem, setTipoMensagem] = useState<"sucesso" | "erro" | "">("");
+
+    // Validação simples do CPF no formato 000.000.000-00
+    const validarCPF = (cpf: string) => {
+        const regex = /^\d{3}\.\d{3}\.\d{3}\-\d{2}$/;
+        return regex.test(cpf);
+    };
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
+
+        if (!validarCPF(cpf)) {
+            setMensagem("CPF inválido. Use o formato 000.000.000-00.");
+            setTipoMensagem("erro");
+            return;
+        }
+
+        // Aqui você pode adicionar outras validações se quiser
+
         setMensagem("Cadastro de usuário realizado com sucesso!");
+        setTipoMensagem("sucesso");
         setNome("");
         setEmail("");
+        setCpf("");
     };
 
     return (
@@ -58,6 +77,19 @@ export default function UsuariosPage() {
                     </div>
 
                     <div className="w-full">
+                        <label className="block text-sm font-medium text-gray-700">CPF</label>
+                        <input
+                            type="text"
+                            value={cpf}
+                            onChange={(e) => setCpf(e.target.value)}
+                            required
+                            className="mt-1 block w-full rounded-md border border-gray-300 p-2"
+                            maxLength={14}
+                            placeholder="000.000.000-00"
+                        />
+                    </div>
+
+                    <div className="w-full">
                         <label className="block text-sm font-medium text-gray-700">Email</label>
                         <input
                             type="email"
@@ -76,7 +108,13 @@ export default function UsuariosPage() {
                     </button>
 
                     {mensagem && (
-                        <div className="mt-4 rounded-md bg-green-100 p-4 text-green-800 shadow w-full text-center">
+                        <div
+                            className={`mt-4 rounded-md p-4 shadow w-full text-center ${
+                                tipoMensagem === "erro"
+                                    ? "bg-red-100 text-red-800"
+                                    : "bg-green-100 text-green-800"
+                            }`}
+                        >
                             {mensagem}
                         </div>
                     )}
