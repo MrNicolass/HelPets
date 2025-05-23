@@ -8,6 +8,7 @@ import { ArrowLeft } from "lucide-react";
 export default function AnimaisPage() {
     const [nome, setNome] = useState("");
     const [raca, setRaca] = useState("");
+    const [tag, setTag] = useState("");
     const [mensagem, setMensagem] = useState("");
 
     const handleSubmit = (e: React.FormEvent) => {
@@ -15,6 +16,7 @@ export default function AnimaisPage() {
         setMensagem("Cadastro do animal realizado com sucesso!");
         setNome("");
         setRaca("");
+        setTag("");
     };
 
     return (
@@ -68,9 +70,22 @@ export default function AnimaisPage() {
                         />
                     </div>
 
+                    <div className="w-full">
+                        <label className="block text-sm font-medium text-gray-700">Identificação</label>
+                        <input
+                            type="number"
+                            value={tag}
+                            onChange={(e) => setTag(e.target.value.replace(/\D/, ""))}
+                            required
+                            className="mt-1 block w-full rounded-md border border-gray-300 p-2"
+                            min={0}
+                            step={1}
+                        />
+                    </div>
+
                     <button
                         type="submit"
-                        className="rounded-md bg-green-600 px-4 py-2 text-white hover:bg-green-700 w-full"
+                        className="rounded-md bg-[#6a7282] px-4 py-2 text-white hover:bg-[#565d6b] w-full"
                     >
                         Cadastrar Animal
                     </button>
