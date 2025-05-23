@@ -70,7 +70,7 @@ export default function UsuariosPage() {
 
                     <button
                         type="submit"
-                        className="rounded-md bg-green-600 px-4 py-2 text-white hover:bg-green-700 w-full"
+                        className="rounded-md bg-[#6a7282] px-4 py-2 text-white hover:bg-[#565d6b] w-full"
                     >
                         Cadastrar Usuário
                     </button>
