@@ -27,8 +27,6 @@ export default function UsuariosPage() {
             return;
         }
 
-        // Aqui você pode adicionar outras validações se quiser
-
         setMensagem("Cadastro de usuário realizado com sucesso!");
         setTipoMensagem("sucesso");
         setNome("");
