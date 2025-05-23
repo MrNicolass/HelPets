@@ -15,8 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "ERP App",
+  title: "HelPets",
   description: "Painel administrativo ERP",
+   icons: {
+   icon: '/images/helpetslohoexemplo.png', // caminho dentro da pasta public
+  },
 };
 
 export default function RootLayout({
