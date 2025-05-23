@@ -2,7 +2,7 @@ import PageTitle from "@/components/PageTitle";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export default function FiliaisPage() {
+export default function TutoresPage() {
   return (
     <div className="min-h-screen bg-[#f5efe1] p-8">
       {/* Cabeçalho com botão de voltar */}
