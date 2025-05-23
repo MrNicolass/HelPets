@@ -95,7 +95,7 @@ export default function Sidebar() {
         {!isCollapsed && (
           <div className="flex flex-col flex-1 items-start ml-2">
             <span className="font-semibold text-gray-200 leading-tight">
-              Usuário
+              Dashboard
             </span>
             <span className="text-xs text-gray-400 leading-tight">Cargo</span>
           </div>

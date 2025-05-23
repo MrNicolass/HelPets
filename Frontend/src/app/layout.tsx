@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "ERP App",
+  title: "HelPets",
   description: "Painel administrativo ERP",
 };
 
