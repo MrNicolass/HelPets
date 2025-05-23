@@ -1,7 +1,7 @@
 
 export const ROUTES = {
   home: "/",
-  lorem: "/lorem",
+  dashboard: "/dashboard",
   ipsum: "/ipsum",
   is: "/is",
   simply: "/simply",

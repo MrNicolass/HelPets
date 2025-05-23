@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 
 export const MENU_ITEMS = [
-  { label: "Lorem", icon: FaChartBar, to: ROUTES.lorem },
+  { label: "Dashboard", icon: FaChartBar, to: ROUTES.dashboard },
   { label: "Ipsum", icon: FaPaw, to: ROUTES.ipsum },
   { label: "Is", icon: FaUserFriends, to: ROUTES.is },
   { label: "Simply", icon: FaExclamationTriangle, to: ROUTES.simply },
