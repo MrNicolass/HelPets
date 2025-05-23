@@ -3,16 +3,14 @@ import {
   FaBell,
   FaChartBar,
   FaCog,
-  FaExclamationTriangle,
   FaPaw,
   FaUserFriends,
 } from "react-icons/fa";
 
 export const MENU_ITEMS = [
+  { label: "Home", icon: FaPaw, to: ROUTES.home },
   { label: "Dashboard", icon: FaChartBar, to: ROUTES.dashboard },
-  { label: "Ipsum", icon: FaPaw, to: ROUTES.ipsum },
-  { label: "Is", icon: FaUserFriends, to: ROUTES.is },
-  { label: "Simply", icon: FaExclamationTriangle, to: ROUTES.simply },
-  { label: "Dummy", icon: FaBell, to: ROUTES.dummy },
-  { label: "Text", icon: FaCog, to: ROUTES.text },
+  { label: "Cadastros", icon: FaUserFriends, to: ROUTES.cadastros },
+  { label: "Notificações", icon: FaBell, to: ROUTES.notificacoes },
+  { label: "Configurações", icon: FaCog, to: ROUTES.configuracoes },
 ];

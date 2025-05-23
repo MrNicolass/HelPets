@@ -97,7 +97,7 @@ export default function Sidebar() {
             <span className="font-semibold text-gray-200 leading-tight">
               Dashboard
             </span>
-            <span className="text-xs text-gray-400 leading-tight">Ipsum</span>
+            <span className="text-xs text-gray-400 leading-tight">Cargo</span>
           </div>
         )}
         <button

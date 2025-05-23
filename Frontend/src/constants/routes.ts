@@ -1,12 +1,11 @@
 
 export const ROUTES = {
-  home: "/",
+  login: "/",
+  home: "/home",
   dashboard: "/dashboard",
-  ipsum: "/ipsum",
-  is: "/is",
-  simply: "/simply",
-  dummy: "/dummy",
-  text: "/text"
+  cadastros: "/cadastros",
+  notificacoes: "/notificacoes",
+  configuracoes: "/configuracoes"
 } as const;
 
 export type RouteKey = keyof typeof ROUTES;
