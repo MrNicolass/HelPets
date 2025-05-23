@@ -14,6 +14,7 @@
     "@hookform/resolvers": "^5.0.1",
     "autoprefixer": "^10.4.21",
     "framer-motion": "^12.11.0",
+    "lucide-react": "^0.511.0",
     "leaflet": "^1.9.4",
     "leaflet.heat": "^0.2.0",
     "next": "15.3.1",

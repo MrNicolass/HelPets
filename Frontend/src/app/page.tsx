@@ -3,7 +3,7 @@ import "@/styles/login/loginStyle.css";
 
 export default function Login() {
   return (
-    <main className="size-full">
+    <main className="size-full" style={{ backgroundColor: "#f5efe1" }}>
       <div className="flex w-full h-full p-25">
         <section className="w-4/6 h-full items-center pl-10 pr-10 pb-10">
           <img
@@ -12,7 +12,7 @@ export default function Login() {
             alt="Decorative HelPets Logo"
           />
         </section>
-        <div className="flex flex-col w-2/6 h-4/6 mt-30 p-10 rounded-2xl shadow-md">
+        <div className="flex flex-col w-2/6 h-4/6 mt-30 p-10 rounded-2xl shadow-md bg-white">
           <h2 className="text-4xl font-bold text-base-color">
             Seja Bem-Vindo!
           </h2>
