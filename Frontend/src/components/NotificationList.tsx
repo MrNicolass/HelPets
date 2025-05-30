@@ -6,14 +6,14 @@ const notifications = [
     title: "Arquivo enviado",
     description: "Seu arquivo foi enviado com sucesso.",
     time: "1 dia",
-    color: "bg-green-50"
+    color: "bg-black-50"
   },
   {
     icon: <FaLock className="text-orange-400 text-2xl" />,
     title: "Senha redefinida",
     description: "Sua senha foi redefinida com sucesso.",
     time: "2 dias",
-    color: "bg-orange-50"
+    color: "bg-black-50"
   },
   {
     icon: <FaUserPlus className="text-blue-500 text-2xl" />,
