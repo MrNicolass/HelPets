@@ -13,6 +13,35 @@
 
 ## Tema: *Controle da Gestão de Animais para Intituições de Resgate*
 
+## Utilização
+
+### Projeto
+Para executar o projeto, vá até o Frontend e Backend e rode um install:
+
+`cd .\Frontend\` e `npm install`
+
+`cd ..\Backend\` e `npm install`
+
+Agora, execue o projeto com:
+
+`npm run dev`
+
+### Banco de Dados
+
+Para atualizar o banco, alterar o schema.prisma e rodar o comando npx prisma:
+
+`npx prisma migrate dev --name {{nome da alteração}}`
+ 
+Agora, caso queira popular a Database:
+
+`npx prisma db seed`
+ 
+Para ver os dados do banco pelo prisma:
+
+`npx prisma studio`
+
+Pronto, você está administrando o banco prisma.
+
 ---
 
 ## 1. Problema/Objetivo
