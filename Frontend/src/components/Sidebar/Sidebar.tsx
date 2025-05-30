@@ -48,7 +48,7 @@ export default function Sidebar() {
         <div className="flex flex-col items-center py-8">
           <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-purple-300 to-pink-200 mb-2 overflow-hidden">
             <img
-              src="/images/Captura de tela 2025-05-02 154153.png"
+              src="/images/helpetslohoexemplo.png"
               alt="Logo"
               className="w-full h-full object-cover"
             />
@@ -87,7 +87,7 @@ export default function Sidebar() {
       <div className="flex items-center justify-center py-6 border-t border-gray-600 gap-3 px-4">
         <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-300 to-pink-200 overflow-hidden">
           <img
-            src="/images/Captura de tela 2025-05-02 154153.png"
+            src="/images/helpetslohoexemplo.png"
             alt="User"
             className="w-full h-full object-cover"
           />
@@ -103,6 +103,7 @@ export default function Sidebar() {
         <button
           className="text-gray-400 dark:text-gray-300 hover:text-red-500 text-xl ml-2"
           aria-label="Sair"
+          onClick={() => window.location.href = "/"}
         >
           <FaSignOutAlt />
         </button>
