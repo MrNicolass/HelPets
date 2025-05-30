@@ -8,7 +8,7 @@ export default function Login() {
         <section className="w-4/6 h-full items-center pl-10 pr-10 pb-10">
           <img
             src="/images/helpetslohoexemplo.png"
-            className="w-full h-full rounded-lg"
+            className="w-full h-full rounded-lg mt-[-4rem] ml-[-2rem]"
             alt="Decorative HelPets Logo"
           />
         </section>
@@ -37,12 +37,13 @@ export default function Login() {
               />
             </div>
             <div className="flex justify-between items-center mt-6">
-              <button
+                <button
                 className="button-color text-white px-6 py-2 rounded hover:bg-red-700"
-                type="submit"
-              >
+                type="button"
+                onClick={() => window.location.href = "/home"}
+                >
                 Entrar
-              </button>
+                </button>
               <a className="link-color font-medium hover:underline" href="#">
                 Esqueceu sua senha?
               </a>
