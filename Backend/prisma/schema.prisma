@@ -1,0 +1,100 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum StatusAnimal {
+  EM_ADOCAO
+  ADOTADO
+  FALECIDO
+}
+
+enum UsuarioTipo {
+  ADMIN
+  ONG
+}
+
+model Usuario {
+  id           String   @id @default(uuid())
+  nome         String
+  email        String   @unique
+  senhaHash    String
+  tipo         UsuarioTipo
+  filialId     String?
+  filial       Filial?  @relation(fields: [filialId], references: [id])
+  criadoEm     DateTime @default(now())
+  atualizadoEm DateTime @updatedAt
+}
+
+model Filial {
+  id       String    @id @default(uuid())
+  nome     String
+  cidade   String
+  estado   String
+  animais  Animal[]
+  usuarios Usuario[]
+}
+
+model TipoAnimal {
+  id      String     @id @default(uuid())
+  nome    String
+  racas   RacaAnimal[]
+  animais Animal[]
+}
+
+model RacaAnimal {
+  id           String     @id @default(uuid())
+  nome         String
+  tipoAnimalId String
+  tipoAnimal   TipoAnimal @relation(fields: [tipoAnimalId], references: [id])
+  animais      Animal[]
+}
+
+model Animal {
+  id             String       @id @default(uuid())
+  nome           String
+  idade          String
+  genero         String
+  localResgate   String
+  estadoSaude    String
+  dataResgate    DateTime
+  status         StatusAnimal
+
+  tipoAnimalId   String
+  tipoAnimal     TipoAnimal  @relation(fields: [tipoAnimalId], references: [id])
+
+  racaAnimalId   String
+  racaAnimal     RacaAnimal  @relation(fields: [racaAnimalId], references: [id])
+
+  filialId       String
+  filial         Filial      @relation(fields: [filialId], references: [id])
+
+  tutorId        String?
+  tutor          Tutor?      @relation(fields: [tutorId], references: [id])
+
+  imagens        ImagemAnimal[]
+
+  criadoEm       DateTime    @default(now())
+  atualizadoEm   DateTime    @updatedAt
+}
+
+model ImagemAnimal {
+  id        String  @id @default(uuid())
+  url       String
+  animalId  String
+  animal    Animal  @relation(fields: [animalId], references: [id])
+}
+
+model Tutor {
+  id        String   @id @default(uuid())
+  nome      String
+  cpf       String   @unique
+  email     String
+  telefone  String
+  endereco  String
+  animais   Animal[]
+}
