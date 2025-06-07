@@ -5,7 +5,9 @@ export const ROUTES = {
   dashboard: "/dashboard",
   cadastros: "/cadastros",
   notificacoes: "/notificacoes",
-  configuracoes: "/configuracoes"
+  configuracoes: "/configuracoes",
+  forget: "/forget",
+  newpass: "/newpass"
 } as const;
 
 export type RouteKey = keyof typeof ROUTES;
