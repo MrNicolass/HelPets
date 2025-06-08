@@ -44,7 +44,7 @@ export default function Login() {
                 >
                 Entrar
                 </button>
-              <a className="link-color font-medium hover:underline" href="#">
+              <a className="link-color font-medium hover:underline" href="/forget">
                 Esqueceu sua senha?
               </a>
             </div>
