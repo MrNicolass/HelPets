@@ -9,7 +9,7 @@ export default function SidebarWrapper({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-  const showSidebar = pathname !== "/" && pathname !== "/forget";
+  const showSidebar = pathname !== "/" && pathname !== "/forget" && pathname !== "/newpass";
 
   return (
     <div className="flex min-h-screen">

@@ -3,7 +3,7 @@
 import { ArrowLeft } from "lucide-react";
 import { FormEvent, useState } from "react";
 import Link from 'next/link';
-import CodigoNovaSenha  from "../../components/novaSenha/CodigoNovaSenha";
+import CodigoNovaSenha  from "../../components/NovaSenha/CodigoNovaSenha";
 
 export default function Forget() {
   const [email, setEmail] = useState<string>("");
@@ -25,7 +25,7 @@ export default function Forget() {
     <>
       {!showCodigo && (
         <div className="flex w-full h-full justify-center items-center">
-          <div className="flex flex-col w-2/6 h-90 mt-30 p-10 rounded-2xl shadow-md bg-white">
+          <div className="flex flex-col w-2/6 p-10 rounded-2xl shadow-md bg-white">
             <div className="flex gap-4">
               <Link href="/">
                 <ArrowLeft className="mr-2"/>
@@ -77,6 +77,7 @@ export default function Forget() {
                   {email}
                 </span>.
             </p>
+
             <button
                 onClick={handleAlert}
                 className="mt-2 px-6 py-2 bg-gray-600 text-white font-semibold rounded-md
