@@ -7,11 +7,40 @@
 ## Situação do Projeto
 ![Status](https://img.shields.io/badge/Status-Em%20Progresso-yellow)
 
-![Etapa](https://img.shields.io/badge/Etapa-N1-green)![Etapa](https://img.shields.io/badge/N2-000000)![Etapa](https://img.shields.io/badge/N3-000000)
+![Etapa](https://img.shields.io/badge/Etapa-N1-000000)![Etapa](https://img.shields.io/badge/N2-green)![Etapa](https://img.shields.io/badge/N3-000000)
 
 # HelPets
 
 ## Tema: *Controle da Gestão de Animais para Intituições de Resgate*
+
+## Utilização
+
+### Projeto
+Para executar o projeto, vá até o Frontend e Backend e rode um install:
+
+`cd .\Frontend\` e `npm install`
+
+`cd ..\Backend\` e `npm install`
+
+Agora, execue o projeto com:
+
+`npm run dev`
+
+### Banco de Dados
+
+Para atualizar o banco, alterar o schema.prisma e rodar o comando npx prisma:
+
+`npx prisma migrate dev --name {{nome da alteração}}`
+ 
+Agora, caso queira popular a Database:
+
+`npx prisma db seed`
+ 
+Para ver os dados do banco pelo prisma:
+
+`npx prisma studio`
+
+Pronto, você está administrando o banco prisma.
 
 ---
 
@@ -78,27 +107,52 @@
 As Sprints do projeto estão disponíveis no [Trello](https://trello.com/w/helpets8/home).
 
 ### Sprint 1
-- [Funcionalidade 1]
-- [Funcionalidade 2]
+- ___Criação da arquitetura e estrutura do projeto;___
+- ___Interface básica (Front-end);___
+- ___Organização de repositórioe versionamento do projeto;___
 
 ### Sprint 2
-- [Funcionalidade 3]
-- [Funcionalidade 4]
+- ___Criação de usuário;___
+- ___Sistema de login;___
+- ___Adição do NestJS e configuração de lógica básica (Back-end);___
 
 ### Sprint 3
-- [Funcionalidade 5]
-- [Funcionalidade 6]
+- ___Personalizações e implementações de configurações;___
+- ___Vinculo de tutores aos animais;___
+- ___Criação de banco de dados;___
 
-*(Adicione mais sprints conforme necessário)*
+### Sprint 4
+- ___Melhorias de UX e criação de estatísticas;___
+- ___Adição de filtros em buscas (localização de animais);___
+- ___Adição de características dos animais;___
 
+### Sprint 5
+- ___Exportação de dados (CSV ou PDF);___
+- ___Otimização no tempo de resposta da aplicação;___
+
+### Sprint 6
+- ___Reorganização de interface, visando a acessibilidade;___
+- ___Relatórios sobre HeatMap de abandono;___
+
+### Sprint 7
+- ___Avaliação geral de bugs;___
+- ___Reuniões sobre improvements da aplicação;___
+- ___Implementação de backups de dados;___
+
+
+### Sprint 8
+- ___Correção de bugs;___
+- ___Finalização e entrega do projeto;___
 ---
 
 ## 6. Entregas e Valor Incremental
 
-- Após a **Sprint 1**: *[Descreva o que já será utilizável/testável]*
-- Após a **Sprint 2**: *[Descreva como o sistema evolui]*
-- Após a **Sprint 3**: *[Descreva como o sistema estará mais completo]*
-
+- Após a **Sprint 1**: *Será possível acessar a interface básica da aplicação;*
+- Após a **Sprint 2**: *O cadastro e o login podem ser executados pelo usuário;*
+- Após a **Sprint 3**: *O usuário poderá reaizar ações de busca a respeito dos dados cadastrados;*
+- Após a **Sprint 4**: *Haverá uma melhoria na UX e as buscas poderão ser mais detalhadas com filtros e personalizações;*
+- Após a **Sprint 5**: *Com a aplicação otimizada, os dados poderão ser exportados;*
+- Após a **Sprint 6**: *A ONG poderá verificar quais são os pontos com maior abandono de animais;*
 ---
 
 ## Observações Finais
