@@ -7,7 +7,3 @@
 .link-color {
     color: var(--c-blue);
 }
-
-body {
-  overflow-y: hidden;
-}

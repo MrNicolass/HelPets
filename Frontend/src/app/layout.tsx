@@ -18,7 +18,7 @@ export const metadata = {
   title: "HelPets",
   description: "Painel administrativo ERP",
    icons: {
-   icon: '/images/helpetslohoexemplo.png', // caminho dentro da pasta public
+   icon: '/images/helpetslohoexemplo.png',
   },
 };
 
@@ -29,9 +29,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <SidebarWrapper>{children}</SidebarWrapper>
       </body>
     </html>
