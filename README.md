@@ -7,7 +7,7 @@
 ## Situação do Projeto
 ![Status](https://img.shields.io/badge/Status-Em%20Progresso-yellow)
 
-![Etapa](https://img.shields.io/badge/Etapa-N1-000000)![Etapa](https://img.shields.io/badge/N2-green)![Etapa](https://img.shields.io/badge/N3-000000)
+![Etapa](https://img.shields.io/badge/Etapa-N1-000000)![Etapa](https://img.shields.io/badge/N2-000000)![Etapa](https://img.shields.io/badge/N3-green)
 
 # HelPets
 
@@ -69,7 +69,15 @@
 
 ## 4. Definição do MVP (Produto Mínimo Viável)
 
-*[Liste aqui as funcionalidades mínimas para validar a ideia e já gerar valor]*
+O MVP (Produto Mínimo Viável) do sistema HelPets consiste nas seguintes funcionalidades essenciais para validar a proposta e já gerar valor para as ONGs:
+
+- Cadastro de ONGs com informações básicas (nome, CNPJ, endereço, telefone e responsável).
+- Autenticação e login de ONGs cadastradas.
+- Cadastro e gerenciamento de animais resgatados, incluindo dados como espécie, raça, idade estimada, gênero, estado de saúde e local/data do resgate.
+- Atualização do status dos animais para “Resgatado”, “Disponível”, “Adotado” ou “Falecido”.
+- Cadastro de tutores e vinculação a animais adotados.
+- Interface gráfica funcional com foco em usabilidade (CRUD completo).
+- Filtros básicos para busca de animais por status, espécie ou local do resgate.
 
 ---
 
@@ -78,19 +86,44 @@
 As Sprints do projeto estão disponíveis no [Trello](https://trello.com/w/helpets8/home).
 
 ### Sprint 1
-- [Funcionalidade 1]
-- [Funcionalidade 2]
+- Criação do repositório GitHub e organização inicial da equipe.
+- Definição do escopo, levantamento de requisitos e elaboração do README.
+- Criação do Trello com backlog inicial e organização das tarefas.
 
 ### Sprint 2
-- [Funcionalidade 3]
-- [Funcionalidade 4]
+- Modelagem do banco de dados relacional (ONG, Animal, Tutor, Resgate).
+- Estruturação básica do backend com as rotas principais (Node/Express ou similar).
+- Criação das entidades e relações no ORM.
 
 ### Sprint 3
-- [Funcionalidade 5]
-- [Funcionalidade 6]
+- Implementação do cadastro e login de ONGs com autenticação.
+- Cadastro de animais resgatados com todos os campos necessários.
+- Página de listagem dos animais com exibição básica de dados.
 
-*(Adicione mais sprints conforme necessário)*
+### Sprint 4
+- Implementação da edição e exclusão de registros (CRUD completo).
+- Tela de visualização individual do animal com seus dados completos.
+- Melhoria da interface com layout responsivo.
 
+### Sprint 5
+- Cadastro e gerenciamento de tutores/adotantes.
+- Vinculação de tutor a animal no processo de adoção.
+- Atualização do status do animal após adoção.
+
+### Sprint 6
+- Implementação de filtros por espécie, status, local do resgate e nome.
+- Interface para busca rápida de animais cadastrados.
+- Integração entre módulos (animais, tutores e ONGs).
+
+### Sprint 7
+- Exportação de dados em CSV e PDF (resgates, adoções).
+- Registro e visualização dos locais de resgate com base geográfica.
+- Criação de painéis com informações resumidas (cards ou dashboards).
+
+### Sprint 8
+- Melhorias gerais no design e experiência do usuário (UX/UI).
+- Testes de usabilidade e verificação de acessibilidade.
+- Deploy da aplicação e documentação final do projeto.
 ---
 
 ## 6. Entregas e Valor Incremental
@@ -103,7 +136,7 @@ As Sprints do projeto estão disponíveis no [Trello](https://trello.com/w/helpe
 
 ## Observações Finais
 
-*[Espaço livre para anotações da equipe, aprendizados, dificuldades ou sugestões para próximas etapas]*
+Este projeto reforçou a importância do trabalho em equipe, da empatia com o usuário final e da capacidade de adaptação em contextos de incerteza. Aplicar os conhecimentos de Engenharia de Software em um caso concreto nos motivou a buscar soluções mais eficazes, pesquisando além do conteúdo visto em sala. A proposta do *HelPets* nos inspirou não apenas tecnicamente, mas também pessoalmente, mostrando que é possível usar a tecnologia para gerar impacto social positivo. Esperamos que, no futuro, o sistema possa ser expandido e utilizado por ONGs reais, colaborando com o bem-estar animal e a organização de instituições que tanto precisam de apoio.
 
 ## Contribuidores
 A equipe envolvida neste projeto é constituída por alunos da 6ª Fase (20251) do curso de Engenharia de Software do Centro Universitário Católica SC de Jaraguá do Sul.
